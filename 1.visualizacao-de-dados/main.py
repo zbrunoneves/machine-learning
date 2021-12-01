@@ -6,11 +6,11 @@ import matplotlib.pyplot as plt
 # EXPLORAÇÃO E VISUALIZACAO DE DADOS
 # =============================================================================
 
-# diretório atual (~/ufrj/aprendizado-de-maquina/1.visualizacao-de-dados)
+# diretório atual
 curr_dir = os.path.dirname(__file__)
 
 # ler arquivo
-data = pd.read_csv('iris-data.csv', sep=',', decimal='.')
+data = pd.read_csv('../0.dados/iris-data.csv', sep=',', decimal='.')
 
 # n primeiras linhas
 data.head(n=10)
