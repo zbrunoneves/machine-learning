@@ -61,6 +61,12 @@ data.groupby('species').agg({
 # trazer toda informação do dataset sem compressão '...'
 data.to_string()
 
+# conjunto de dados transposto
+data.T
+
+# remove coluna da base de dados
+data = data.drop(['a', 'b'])
+
 # selecionar uma submatriz de dados do dataset
 data.iloc[10:99, 0:5]
 
