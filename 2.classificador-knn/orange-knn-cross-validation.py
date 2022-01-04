@@ -52,7 +52,7 @@ shuffled_data = data.sample(frac=1)
 x = shuffled_data.loc[:, shuffled_data.columns != 'churned'].values
 y = shuffled_data.loc[:, shuffled_data.columns == 'churned'].values
 
-x_train, y_train, x_test, y_test = \
+x_train, x_test, y_train, y_test = \
     train_test_split(x, y, train_size=0.8, shuffle=True)
 
 scores = cross_val_score(
