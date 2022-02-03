@@ -65,7 +65,7 @@ data.to_string()
 data.T
 
 # remove coluna da base de dados
-data = data.drop(['a', 'b'])
+# data = data.drop(['a', 'b'])
 
 # selecionar uma submatriz de dados do dataset
 data.iloc[10:99, 0:5]
